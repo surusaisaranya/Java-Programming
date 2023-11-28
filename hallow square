@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class SquarePattern
+{
+    public static void main(String[] args)
+    {
+    Scanner scanner  = new Scanner (System.in);
+    System.out.println("enter the number of rows");
+    int r=scanner.nextInt();
+    System.out.println("enter the columns ");
+    int c=scanner.nextInt();
+    int i,j;
+    for (i=1;i<=r;i++)
+    {
+        for (j=1;j<=c;j++)
+        {
+            if (i==1 || i==r||j==1 ||j==c)
+            {
+                System.out.print("*");
+            }
+            else
+            {
+            System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
+    
+    }
+}
+
+output:
+enter the number of rows
+5
+enter the columns 
+5
+*****
+*   *
+*   *
+*   *
+*****
