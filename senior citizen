@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class SeniorCitizen
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        int r;
+        System.out.println("enter that are u a senior citizen");
+        char c=scanner.next().charAt(0);
+        if (c=='y' || c=='Y')
+        {
+            r=12;
+        }
+        else if (c=='n'||c=='N')
+        {
+            r=10;
+        }
+        else
+        {
+            return;
+        }
+        System.out.println("enter the principal amount");
+        int p=scanner.nextInt();
+        System.out.println("enter the time period:");
+        int t=scanner.nextInt();
+        System.out.println("rate of intersest is"+r);
+        int i=(p*t*r)/100;
+        System.out.println("interst is "+i);
+    }
+}
