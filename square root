@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class SquareRoot
+
+{
+    public static void main(String[] args)
+    {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("enter the number");
+    int n=scanner.nextInt();
+    System.out.println("squareroot of the number are-"+Math.sqrt(n)+"and "+Math.sqrt(n));
+}
+}
+
+output:
+enter the number
+6561
+squareroot of the number are-81.0and 81.0
