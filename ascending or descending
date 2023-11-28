@@ -1,0 +1,50 @@
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.ArrayList;
+class AscenDescen
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the numbber of names:");
+        int num=scanner.nextInt();
+        ArrayList<String>names=new ArrayList<>();
+        for (int i=0;i<num;i++)
+        {
+            System.out.println("enter names"+i+" :");
+            String name=scanner.next();
+            names.add(name);
+        }
+        System.out.println("enter u want either in ascending or descending");
+        char c=scanner.next().charAt(0);
+        if (c=='a' || c=='A')
+        {
+            Collections.sort(names);
+            System.out.println("names are:"+names);
+        }
+        else if (c=='d' || c=='D')
+        {
+            Collections.sort(names,Collections.reverseOrder());
+            System.out.println(names);
+        }
+        else
+        {
+            System.out.println("enter the valid answer");
+        }
+    }
+}
+
+output:
+enter the numbber of names:
+4
+enter names0 :
+m laksg hmi
+enter names1 :
+hari
+enter names2 :
+sai
+enter names3 :
+liki' 
+enter u want either in ascending or descending
+d
+[sai, liki, lakshmi, hari]
