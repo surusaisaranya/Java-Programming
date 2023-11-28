@@ -1,0 +1,60 @@
+
+import java.io.*;
+import java.util.regex.*;
+
+class GFG {
+
+	
+	public static boolean isValid(String s)
+	{
+
+		
+		Pattern p = Pattern.compile("^\\d{10}$");
+
+		
+		Matcher m = p.matcher(s);
+
+	
+		return (m.matches());
+	}
+
+	
+	public static void main(String[] args)
+	{
+
+		
+		String s = "7984286257";
+		String s_1 = "5426391";
+
+		
+		if (isValid(s))
+
+			
+			System.out.println("Valid Number");
+		else
+
+			
+			System.out.println("Invalid Number");
+
+		
+		if (isValid(s_1))
+
+			
+			System.out.println("Valid Number");
+		else
+
+			
+			System.out.println("Invalid Number");
+	}
+}
+
+
+
+
+
+
+
+output:
+java -cp /tmp/bwCZwyF2XH GFG
+Valid Number
+Invalid Number
