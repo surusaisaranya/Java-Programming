@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class SpecialCharacters
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the string");
+        String s=scanner.nextLine();
+        int i,count=0;
+        for (i=0;i<s.length();i++)
+        {
+            if (!((s.charAt(i)>='a' && s.charAt(i)<='z')|| (s.charAt(i)>='A' && s.charAt(i)<='Z')))
+        {
+            System.out.println(s.charAt(i));
+            count++;
+        }
+        }
+        System.out.println(count);
+    }
+}
+
+
+output:
+
+enter the string
+SAer#@!
+#
+@
+!
+3
