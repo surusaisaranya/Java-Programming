@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class Interst
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+    System.out.println("enter the principal amount");
+    double p=scanner.nextInt();
+    System.out.println("enter the time period");
+    int t=scanner.nextInt();
+    System.out.println("enter the rate of interst");
+    int r=scanner.nextInt();
+    double i=(p*t*r)/100;
+    System.out.println("interst is "+i);
+    }
+}
