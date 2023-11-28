@@ -1,0 +1,35 @@
+
+import java.lang.Math; 
+
+class Gfg { 
+
+
+	public static void main(String args[]) 
+	{ 
+		double a = 30; 
+
+		System.out.println(Math.sqrt(a)); 
+
+		a = 45; 
+
+		System.out.println(Math.sqrt(a)); 
+
+		a = 60; 
+
+		System.out.println(Math.sqrt(a)); 
+
+		a = 90; 
+
+		System.out.println(Math.sqrt(a)); 
+	} 
+} 
+
+
+
+output:
+
+java -cp /tmp/bwCZwyF2XH Gfg
+5.477225575051661
+6.708203932499369
+7.745966692414834
+9.486832980505138
