@@ -1,0 +1,37 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class LargestNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("enter the size of an array:");
+        int n=scanner.nextInt();
+        int []a=new int [n];
+        System.out.println("enter the elements of an array:");
+        int i;
+        for (i=0;i<n;i++)
+        {
+            a[i]=scanner.nextInt();
+        }
+        System.out.println("enter the mth:");
+        int m=scanner.nextInt();
+        Arrays.sort(a);
+        int mthele=a[n-m];
+        System.out.println("max element:"+mthele);
+        
+    }
+}
+
+output:
+enter the size of an array:
+5
+enter the elements of an array:
+1
+2
+3
+4
+5
+enter the mth:
+2
+max element:4
