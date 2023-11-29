@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Money
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the number of an 2000 notes:");
+        int t=scanner.nextInt();
+        System.out.println("enter the numner of 500 notes");
+        int f=scanner.nextInt();
+        System.out.println("enter the number of 200 notes");
+        int th=scanner.nextInt();
+        System.out.println("enter the number of 100 notes");
+        int h=scanner.nextInt();
+        int total=(t*2000)+(f*500)+(th*200)+(h*100);
+        System.out.println("total amount present is"+total);
+        
+    }
+}
+
+output:
+enter the number of an 2000 notes:
+1
+enter the numner of 500 notes
+4
+enter the number of 200 notes
+32
+enter the number of 100 notes
+20
+total amount present is12400
