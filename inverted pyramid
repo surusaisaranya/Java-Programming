@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class InvertedPattern
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.println("enter the number of rows of a pattern");
+        int n=scanner.nextInt();
+        int i,j;
+        for (i=1;i<=n;i++)
+        {
+            for (j=1;j<i;j++)
+            {
+                System.out.print(" ");
+            }
+            for (j=1;j<=2*(n-i)+1;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+
+output:
+
+enter the number of rows of a pattern
+5
+*********
+ *******
+  *****
+   ***
+    *
