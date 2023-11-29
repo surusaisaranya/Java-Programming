@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Characters
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the string");
+        String s=scanner.nextLine();
+        System.out.println("enter the character you want to check");
+        char c=scanner.next().charAt(0);
+        int i;
+        boolean isValid=false;
+        for (i=0;i<s.length();i++)
+        {
+            if (c==s.charAt(i))
+            {
+                isValid = true;
+                break;
+            }
+        }
+         if (isValid)
+         {
+             System.out.println("it is present"+s.indexOf(c));
+         }
+         else
+         {
+             System.out.println("it is not present");
+         }
+    }
+}
+
+output:
+enter the string
+saranya 
+enter the character you want to check
+n
+it is present4
