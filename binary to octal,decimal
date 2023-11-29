@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class BinaryConversion {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a binary number:");
+        String binaryInput = scanner.nextLine();
+        int decimalResult = binaryToDecimal(binaryInput);
+        String octalResult = decimalToOctal(decimalResult);
+        System.out.println("Decimal equivalent: " + decimalResult);
+        System.out.println("Octal equivalent: " + octalResult);
+        scanner.close();
+    }
+    static int binaryToDecimal(String binary) {
+        return Integer.parseInt(binary, 2);
+    }
+    static String decimalToOctal(int decimal) {
+        return Integer.toOctalString(decimal);
+    }
+}
+
+
+output:
+Enter a binary number:
+1011
+Decimal equivalent: 11
+Octal equivalent: 13
