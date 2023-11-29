@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Tables
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the table");
+        int n=scanner.nextInt();
+        System.out.println("enter upto which u want:");
+        int j=scanner.nextInt();
+        int i;
+        for (i=1;i<=j;i++)
+        {
+            System.out.println(+n+"*"+i+"="+n*i);
+        }
+    }
+}
+
+out put:
+enter the table
+4
+enter upto which u want:
+5
+4*1=4
+4*2=8
+4*3=12
+4*4=16
+4*5=20
