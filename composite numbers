@@ -1,0 +1,64 @@
+import java.util.Scanner;
+class Composite
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the least value");
+        int a=scanner.nextInt();
+        System.out.println("enter the last value");
+        int b=scanner.nextInt();
+        if (a>b)
+        {
+            System.out.println("error");
+            return;
+        }
+        else
+        {
+            System.out.println("composite number are"+a+" and"+b);
+            printcomposite(a,b);
+        }
+        scanner.close();
+    }
+    private static void printcomposite(int a,int b)
+    {
+        for (int i=a;i<=b;i++)
+        {
+            if (isComposite(i))
+            {
+                System.out.println(i+" ");
+            }
+        }
+        System.out.println();
+    }
+    
+    private static boolean is Composite(int n)
+    {
+        if (n<=1)
+        {
+            return false;
+        }
+        for (i=1;i<=Math.sqrt(n);i++)
+        {
+            if (n%i==0)
+            {
+             return true;   
+            }
+        }
+        return false;
+    }
+}
+
+
+output:
+enter the least value
+2
+enter the last value
+10
+composite number are2 and10
+4 
+6 
+8 
+9 
+10 
+
