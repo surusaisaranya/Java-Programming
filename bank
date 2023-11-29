@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class Bank
+{
+    double getrateofintrest()
+    {
+    return 0.0;
+    }
+}
+class SBI extends Bank
+{
+    
+    double getrateofintrest()
+    {
+        return 8.4;
+    }
+}
+class ICICI extends Bank
+{
+   double getrateofintrest()
+   {
+       return 7.3;
+   }
+}
+class AXIS extends Bank
+{
+    double getrateofintrest()
+    {
+        return 9.7;
+    }
+}
+class BigBank
+{
+    public static void main(String []args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        SBI sbi=new SBI();
+        ICICI icici = new ICICI();
+        AXIS axis = new AXIS();
+        System.out.println("SBI:"+sbi.getrateofintrest()+"%");
+        System.out.println("ICICI:"+icici.getrateofintrest()+"%");
+        System.out.println("AXIS:"+axis.getrateofintrest()+"%");
+    }
+}
+
+
+output:
+SBI:8.4%
+ICICI:7.3%
+AXIS:9.7%
