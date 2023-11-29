@@ -1,0 +1,51 @@
+import java.util.Scanner;
+class Marks
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the marks of python");
+        int p=scanner.nextInt();
+        System.out.println("enter the marks of c programmming");
+        int c=scanner.nextInt();
+        System.out.println("enter the marks of the mathematics");
+        int m=scanner.nextInt();
+        System.out.println("enter the marks in physics");
+        int py=scanner.nextInt();
+        int total=(p+c+m+py);
+        int aggregate=total/4;
+        System.out.println("aggregate is"+aggregate);
+        if (aggregate > 75)
+        {
+                System.out.println("distinction");
+        }
+        else if (aggregate >=60 && aggregate <75)
+        {
+             System.out.println("first division");
+        }
+        else if(aggregate >=50  && aggregate  <60)
+        {
+            System.out.println("second division");
+        }
+        else if (aggregate >=40 && aggregate <50)
+        {
+            System.out.println("thrid division");
+        }
+        else 
+        {
+            System.out.println("fail");
+        }
+    }
+}
+
+output:
+enter the marks of python
+90
+enter the marks of c programmming
+91
+enter the marks of the mathematics
+92
+enter the marks in physics
+93
+aggregate is91
+distinction
