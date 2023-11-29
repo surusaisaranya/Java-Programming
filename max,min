@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class MaxMin
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of an array:");
+        int n=scanner.nextInt();
+        int []arr=new int[n];
+        System.out.println("enter the elements of an array:");
+        int i;
+        for (i=0;i<n;i++)
+        {
+            arr[i]=scanner.nextInt();
+        }
+        System.out.println("enter the m value");
+        int m=scanner.nextInt();
+        System.out.println("enter the n value");
+        int nth=scanner.nextInt();
+        Arrays.sort(arr);
+        int mthmax=arr[arr.length-m];
+        int nthmin=arr[nth-1];
+        System.out.println("sum is"+(mthmax+nthmin));
+        System.out.println("diff is"+(mthmax-nthmin));
+        scanner.close();
+    }
+}
+
+
+output:
+enter the size of an array:
+5
+enter the elements of an array:
+1
+2
+3
+4
+5
+enter the m value
+2
+enter the n value
+1
+sum is5
+diff is3
