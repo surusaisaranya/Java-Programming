@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Fibb implements Runnable
+{
+    private int number;
+    public Fibb(int number)
+    {
+        this.number=number;
+    }
+    public void run()
+    {
+        int n1=0;
+        int n2=1;
+        int sum=0;
+        int n;
+        System.out.println(n1);
+        System.out.println(n2);
+        for (int i=2;i<number;i++)
+        {
+            n=n1+n2;
+            sum=sum+n;
+            System.out.println(n);
+            n1=n2;
+            n2=n;
+        }
+    }
+}
+public class Fibbonacii
+{
+    public static void main(String[] args)
+    {
+        Fibb obj=new Fibb(5);
+        Thread thread = new Thread(obj);
+        thread.start();
+    }
+}
+
+
+
+output:
+0
+1
+1
+2
+3
