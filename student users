@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class CollegeUserCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the total number of users: ");
+        int totalUsers = scanner.nextInt();
+        System.out.print("Enter the total number of staff users: ");
+        int staffUsers = scanner.nextInt();
+        int nonTeachingStaff = staffUsers / 3;
+        int studentUsers = totalUsers - staffUsers - nonTeachingStaff;
+        System.out.println("\nResult:");
+        System.out.println("Student Users: " + studentUsers);
+        System.out.println("Staff Users: " + staffUsers);
+        System.out.println("Non-Teaching Staff: " + nonTeachingStaff);
+        scanner.close();
+}
+}
+output:
+Enter the total number of users: 856
+Enter the total number of staff users: 126
+
+Result:
+Student Users: 688
+Staff Users: 126
+Non-Teaching Staff: 42
