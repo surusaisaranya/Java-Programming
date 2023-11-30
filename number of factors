@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Factors
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the number :");
+        int n=scanner.nextInt();
+        int count=0;
+        for (int i=1;i<=n;i++)
+        {
+            if (n%i==0)
+            {
+                count++;
+            }
+        }
+        System.out.println("no of factors are"+count);
+    }
+}
+
+output:
+enter the number :
+100
+no of factors are9
