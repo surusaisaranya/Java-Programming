@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class StringChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the ransom note:");
+        String r = scanner.nextLine();
+        System.out.println("Enter the magazine:");
+        String m = scanner.nextLine();
+        boolean isRansomNotePossible = checkRansomNote(r, m);
+        System.out.println(isRansomNotePossible);
+    }
+    private static boolean checkRansomNote(String r, String m) {
+        for (int i = 0; i < r.length(); i++) {
+            char currentChar = r.charAt(i);
+            if (m.indexOf(currentChar) == -1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+output:
+Enter the ransom note:
+aa
+Enter the magazine:
+ab
+true
