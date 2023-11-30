@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class Factors {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n = scanner.nextInt();
+        int count = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+        System.out.println("Number of factors: " + count);
+        System.out.println("Enter the value of N to find the nth factor:");
+        int nth = scanner.nextInt();
+        if (nth <= count) {
+            int factor = findNthFactor(n, nth);
+            System.out.println(nth + "th factor of " + n + " is: " + factor);
+        } else {
+            System.out.println("Invalid value of N. It should be less than or equal to the number of factors.");
+        }
+    }
+    private static int findNthFactor(int number, int n) {
+        int count = 0;
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                count++;
+                if (count == n) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+}
+
+output:
